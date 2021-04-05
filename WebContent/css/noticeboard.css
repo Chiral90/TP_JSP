@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	/*background-image:url(../image/4.jpg);*/
+	background-size:1920px 1080px;
+	background:#EAEAEA;
+}
+table{
+	size:auto;
+	border-collapse:collapse;
+	background:#EAEAEA;
+	opacity:1;
+}
+caption{
+	display:none;
+}
+
+h1{
+	color:gray;	
+}
+
+a{
+	text-decoration:none;
+	color: inherit;
+}
+input{
+	background-right:10px;
+}
+.button1{
+	margin-top:-110px;
+	width:60px;
+	height:30px;
+	background-color:black;
+	color:white;
+	box-shadow:0 4px 16px blue(0,79,255,0.3);
+	font-size:12px;
+	/*font-weight:blod;*/
+	border-radius:5px;
+	/*top:50%;
+	left:50%;*/
+	transform:translate(0%,0%);
+	float:center;
+	opacity:0.8;
+}
+button1:focus{
+	outline:0;
+}
+button1:hover{
+	background-color:blue(0,79,255,0.9);
+}
+.button2{
+	margin-top:-120px;
+	width:100px;
+	height:30px;
+	background-color:black;
+	color:white;
+	box-shadow:0 4px 16px blue(0,79,255,0.3);
+	font-size:12px;
+	/*font-weight:blod;*/
+	border-radius:5px;
+	/*top:50%;
+	left:50%;*/
+	transform:translate(0%,0%);
+	float:right;
+	opacity:0.8;
+}
+button2:focus{
+	outline:0;
+}
+button2:hover{
+	background-color:blue(0,79,255,0.9);
+}
+#search{
+	padding:30px;
+	text-align:center;
+}
+
+#write{
+	margin-right:0px;
+	margin-left:1200px;
+	padding:0;
+	text-align:right;
+}
+
+.board1{
+	/* width:70%;
+	height:70%; */
+	width:1024px;
+	height:768px;
+	margin:80px auto -10px auto;
+}
+
+.board2{
+	width:100%;
+	border-top:10px solid gray;
+	border-bottom:10px solid gray;
+}
+
+.board2 tr{
+	border-bottom:1px solid gray;
+}
+
+.board2 th,
+.board2 td{
+	padding:10px;
+	font-size:14px;
+}
+
+.board2 td{
+	text-align:center;
+}
+
+.board2 .page1{
+	text-align:left;
+}
+
+.board2 .page1:hover{
+	text-decoration:underline;
+}
+
+.board1 .page{
+	margin-top:30px;
+	text-align:center;
+	font-size:0;
+	opacity:1;
+}
+
+.board1 .page a{
+	display:inline-block;
+	margin-left:10px;
+	padding:5px 10px;
+	border-radius:100px;
+	font-size:12px;
+	border:1px solid gray;
+	font-weight:0;
+	color:black;
+}
+
+.board1 .page a:first-child{
+	margin-left: 0;
+}
+
+.board1 .page a.page1{
+	border:1px solid #000;
+	background:#eee;
+}
+
+.board1 .page a.number{
+	border:1px solid gray;
+	font-weight:0;
+	color:black;
+}
+.board1 .page a.number.on{
+	background:#D5D5D5;
+	color:black;
+}
+tr th{text-align:center;}
+@media (max-width:1000px){
+	thead {display:none;}
+	tr{border:1px solid #000;}
+	td{display:block; text-align:left;}
+	td:first-child,td:last-child{
+	display:table-cell; width:100px; border:1px solid #000; text-align:center;}
+	td:before{padding:0 0 0 10px; width:100px; inline-block; width:50px;}
+	td:nth-child(2):before{content:"제목 :";}
+}

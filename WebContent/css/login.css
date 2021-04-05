@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+html{
+	font-family: sans-serif;
+}
+body{
+	background-color:#bdc9a6;
+}
+#container{
+	width:400px;
+	height:768px;
+	margin:0px auto;
+	padding:0px;
+	
+}
+#header{
+	width:100%;
+	height:90px;
+	margin:0px;
+  padding:0px;
+}
+#section{
+	position:relative;
+	top:100px;
+	width:430px;
+	height:600px;
+	/* float:left; */
+	margin:0 auto;
+	padding-top:10px;
+	border:2px solid #648181;
+}
+#footer{
+	width:100%;
+	height:120px;
+	clear:both;
+	margin:0px;
+    padding:0px;
+}
+#home{
+	color:#648181;
+	text-decoration:none;	
+}
+h1{ font-family: 'Noto Sans KR', sans-serif;
+	text-align:center;
+}
+form{
+	margin:auto;
+}
+img{
+	width:360px;
+	height:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+ }
+#c{
+	display:block;
+}
+.fieldset{
+	position:relative;
+    width:350px;
+	height:350px;
+	/* border-style:dashed;
+	border-radius:4px;
+	border-width:4px;
+	border-color:#EAEFF9; */
+    margin:0 auto;
+    padding:0px;
+    background:#FCFCFC;
+}
+legend{
+   background-color:#EAEFF9;
+   color: #648181;
+   padding: 5px 10px;
+   font-weight:bold;
+   text-align:center;
+}
+#df{
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align:center;
+	margin-top:40px;
+	padding:auto;
+}
+input {
+  margin: 5px;
+}
+#c{
+	width:150.7px;
+	padding:10px;
+	position:relative;
+	top:10px;
+	border:black 1.5px solid;
+	border-radius:5px;
+	margin:0 auto;
+	background:#648181;
+	color:white;
+	font-weight:bold;
+	/* width:250px;
+	height:50px;
+    background:#EAEFF9;
+    color:#648181;
+    font-weight:bold;
+    border-style:none;
+    font-size:20px;
+    letter-spacing:6px;
+    margin:20px auto; */
+   
+}
+#a{
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing:7px;
+	color:#648181;
+}
+#b{
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing:1px;
+	color:#648181;
+}
+.e{
+   font-family: 'Noto Sans KR', sans-serif;
+   margin-top:40px;  
+   padding:0px;
+   background:#EAEFF9;
+   color:#648181;
+   border-style:none;
+   font-size:16px;
+}
+#id,#password{
+     padding:7px 0px ;
+     background:#EAEFF9;
+     border-style:none;	
+}
+#idchk,#pwchk{
+	text-align:center;
+	font-size:12px;
+}
+p{
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align:center;
+	color:#648181;
+}

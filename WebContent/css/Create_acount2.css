@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*{margin:0 0; padding:0 0;}
+
+#container{
+	width:1024px;
+	height:768px;
+	margin:0 auto;
+	position:relative;top:100px;
+	cursor: url(../cursor/Aero_normal.cur), auto; /* 페이지 내 기본 커서 모양 */
+}
+
+.rq{color:#FF5E00;} /* 필수 입력사항(required) 별(*) 색상 */
+
+h1{text-align:center; padding:50px 0; color: #648181; text-shadow:2px 2px 1px #9db3b3;}
+h2{text-align:center; padding:32px 0;}
+
+/* 마우스 포인터 눈찌르는 모양 */
+a:link{cursor: pointer;} /* footer 메뉴들 */
+a:visited{cursor: pointer;}
+a:hover{cursor: pointer;}
+a:active{cursor: pointer;}
+button:hover{cursor: pointer;}
+
+header{
+	width:100%;
+	height:18.6%;
+}
+
+section{
+	width:450px;
+	height:600px;
+	margin:0 auto;
+	padding:0% 5%; /* 패딩 주면 전체 크기도 커지는 거였음 컨텐츠에만 줘야할듯 */
+	border:2px #648181 solid;
+}
+section form{
+	width:65%; height:50%;
+	margin:0 auto;
+	position:relative; top:-15px;
+	}
+section .inputTrue{color:green; font-size:12px;} /* 입력 결과 텍스트 */
+section .inputFalse{color:red; font-size:12px;}
+
+section input{
+	width:100%;
+	border:0px;
+	border-bottom:2px solid lightgray;
+}
+section input:hover{border-bottom: 2px solid gray;}
+section p{font-weight:bold;}
+section button{
+	width:199.67px;
+	padding:10px;
+	position:relative;
+	top:-31px;
+	border:black 1.5px solid;
+	border-radius:5px;
+	background: #648181;
+	color: white;
+	font-weight:bold;
+	text-shadow:0 0 1px black;
+}
+
+footer{
+	width:100%;
+	height:15%;
+}
+
+footer ul{
+	list-style:none;
+	margin: 0 auto;
+}
+footer li{
+	padding:0 1%;
+	float:left;
+	position:relative;
+	top:30px;
+	left:33.5%;
+	font-size:13px;
+	border-right:1px solid lightgray;
+}
+li:last-child{border-right:none;} /* 마지막 리스트의 오른쪽 구분선 제거 */
+
+/******************* 여기부터 폰 *******************/
+
+@media(max-width:400px){
+	div{
+	background:red;
+	}
+}
+
+
+

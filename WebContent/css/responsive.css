@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* html head 내에 들어가야하는 부분 */
+/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
+@media(max-width:600px){
+	div{
+	background:red;}
+}
