@@ -38,55 +38,8 @@ public class BoardFrontController extends HttpServlet {
     	command = command.substring(folderPath.length());
     	//System.out.println(command);
     	ActionForward forward = null;
-    	Action action = null; // interface filename:action생성 필요
+    	Action action = null;
     	
-    	if (command.equals("/mainBoard.bo")) {
-    		forward = new ActionForward();
-    		forward.setRedirect(true);
-    		forward.setPath("mvc_boardMain.jsp");
-    	}
-    	
-    	if (command.equals("/getlistBoard.bo")) {
-    		action = new listAction();
-    		try {
-    			forward = action.execute(request, response);
-    		} catch (Exception e) {
-    			e.printStackTrace();
-    		}
-    	}
-    	
-    	if (command.equals("/listBoard.bo")) {
-    		forward = new ActionForward();
-    		forward.setRedirect(false);
-    		forward.setPath("mvc_boardList.jsp");
-    	}
-    	
-    	if (command.equals("/detailBoard.bo")) {
-    		action = new detailAction();
-    		try {
-    			forward = action.execute(request, response);
-    		} catch (Exception e) {
-    			e.printStackTrace();
-    		}
-    	}
-    	
-    	if (command.equals("/likeAction.bo")) {
-    		action = new likeAction();
-    		try {
-    			forward = action.execute(request, response);
-    		} catch (Exception e) {
-    			e.printStackTrace();
-    		}
-    	}
-    	
-    	if (forward!=null) {
-    		if (forward.isRedirect()) {
-    			response.sendRedirect(forward.getPath());
-    		} else {
-    			RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
-    			dispatcher.forward(request, response);
-    		}
-    	}
     	
 	}
 	/**

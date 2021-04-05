@@ -6,6 +6,21 @@ public class boardDTO {
 	private String pw;
 	private String content;
 	private String tag;
+	private int view;
+	private int like;
+	
+	public int getView() {
+		return view;
+	}
+	public void setView(int view) {
+		this.view = view;
+	}
+	public int getLike() {
+		return like;
+	}
+	public void setLike(int like) {
+		this.like = like;
+	}
 	public int getNo() {
 		return no;
 	}

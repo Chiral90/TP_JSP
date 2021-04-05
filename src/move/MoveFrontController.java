@@ -34,9 +34,9 @@ public class MoveFrontController extends HttpServlet {
     	String contextPath = request.getContextPath();
     	String command = RequestURI.substring(contextPath.length());
     	
-    	System.out.println(RequestURI);
-    	System.out.println(contextPath);
-    	System.out.println(command);
+    	//System.out.println(RequestURI);
+    	//System.out.println(contextPath);
+    	//System.out.println(command);
     	
     	ActionForward forward = null;
     	Action action = null;

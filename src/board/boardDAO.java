@@ -33,7 +33,7 @@ public class boardDAO {
 		
 		try {
 			String sql = "";
-			sql = "select * from board_test order by no desc";
+			sql = "select * from board_test order by view desc";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
@@ -42,7 +42,8 @@ public class boardDAO {
 				bbean.setTitle(rs.getString("title"));
 				bbean.setPw(rs.getString("pw"));
 				bbean.setContent(rs.getString("content"));
-				bbean.setTag(rs.getString("tag"));
+				bbean.setView(rs.getInt("view"));
+				bbean.setLike(rs.getInt("like"));
 				
 				blist.add(bbean);
 			}
